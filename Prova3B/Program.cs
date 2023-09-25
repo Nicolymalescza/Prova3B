@@ -12,9 +12,9 @@ public class  Program
         double salario;
 
         List<Funcionario> list = new List<Funcionario>();
-       // Funcionario fun = new Funcionario();
-       // Medico funMedico = new Medico();
-       // Administrativo funAdm = new Administrativo();
+        Funcionario fun = new Funcionario();
+        Medico funMedico = new Medico();
+        Administrativo funAdm = new Administrativo();
 
 
         while (true) 
@@ -29,7 +29,7 @@ public class  Program
 
 
                     case 1://Funcionario Normal
-                    Funcionario fun = new Funcionario();
+                    //Funcionario fun = new Funcionario();
                     Console.Write("Infome seu nome: ");
                     fun.Nome = Console.ReadLine();
 
@@ -50,7 +50,7 @@ public class  Program
                     break;
 
                     case 2://Médico  
-                    Medico funMedico = new Medico();
+                    //Medico funMedico = new Medico();
                     Console.Write("Infome seu nome: ");
                     funMedico.Nome = Console.ReadLine();
 
@@ -81,7 +81,7 @@ public class  Program
 
 
                     case 3://Administrativo
-                    Administrativo funAdm = new Administrativo();
+                    //Administrativo funAdm = new Administrativo();
                     Console.Write("Infome seu nome: ");
                     funAdm.Nome = Console.ReadLine();
 
@@ -101,19 +101,19 @@ public class  Program
                     funAdm.Salario = Convert.ToDouble(Console.ReadLine());
 
 
-                    Console.WriteLine($"Nome: {funAdm.Nome}\n{funAdm.Beneficio(Salario).ToString()}");
-                       
-                    
+                    /*foreach(double a in funAdm.ToString())
+                    {
+                        Console.WriteLine($"Nome: {funAdm.Nome}");
+                        Console.Write(a);
+                    }*/
                     /*double beneficio = Beneficio(salario);
                     Console.WriteLine($"Nome: {funAdm.Nome}\nSalario: {funAdm.Beneficio(Salario).ToString()}");
                     Console.WriteLine(funAdm.Beneficio(Salario).ToString());*/
-
 
                     break;
             }
         }
         sair:;
-
 
         Console.ReadKey();
     }
